@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.zhiyou100.rmlb.TestRedis
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.zhiyou100.rmlb.TestRedis
+redisTest(com.zhiyou100.rmlb.TestRedis)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.zhiyou100.rmlb.TestRedis.redisTest(TestRedis.java:26)
+

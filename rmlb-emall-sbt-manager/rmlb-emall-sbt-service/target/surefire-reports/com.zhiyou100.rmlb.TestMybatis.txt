@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.zhiyou100.rmlb.TestMybatis
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.08 s <<< FAILURE! - in com.zhiyou100.rmlb.TestMybatis
+testPagesplit(com.zhiyou100.rmlb.TestMybatis)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.4.215:20880/com.zhiyou100.rmlb.sbt.emall.dubbo.ItemCatDubboService?anyhost=true&application=manager&bind.ip=192.168.4.215&bind.port=20880&channel.readonly.sent=true&codec=dubbo&default.service.filter=regerProviderFilter&default.timeout=10000&dubbo=2.0.1&generic=false&heartbeat=60000&interface=com.zhiyou100.rmlb.sbt.emall.dubbo.ItemCatDubboService&methods=getCatList&pid=5744&qos.accept.foreign.ip=false&qos.enable=false&qos.port=0&revision=1.0.0-SNAPSHOT&side=provider&timestamp=1535099500919&version=1.0.0) Failed to bind NettyServer on /192.168.4.215:20880, cause: Failed to bind to: /0.0.0.0:20880
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.4.215:20880, cause: Failed to bind to: /0.0.0.0:20880
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:20880
+Caused by: java.net.BindException: Address already in use: bind
+

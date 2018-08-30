@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties",
+      "name": "spring.redis",
+      "type": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties",
+      "name": "spring.redis.cluster-nodes",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties",
+      "name": "spring.redis.expire-seconds",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties",
+      "name": "spring.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.zhiyou100.rmlb.sbt.redis.config.RedisProperties",
+      "name": "spring.redis.timeout",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

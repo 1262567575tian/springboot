@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: rmlb-emall-sbt-cat-web
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: com.zhiyou100
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/rmlb-emall-sbt-cat-web
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,12 @@
+com\zhiyou100\rmlb\sbt\emall\dao\TbItemParamMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbOrderMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbItemCatMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbContentCategoryMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbItemMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\SearchItemMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbUserMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbContentMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbOrderItemMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbItemParamItemMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbItemDescMapper.class
+com\zhiyou100\rmlb\sbt\emall\dao\TbOrderShippingMapper.class

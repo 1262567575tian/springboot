@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-content" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-service" charset="UTF-8" />
+  </component>
+</project>

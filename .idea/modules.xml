@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-api/rmlb-emall-sbt-api.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-api/rmlb-emall-sbt-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-common/rmlb-emall-sbt-common.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-common/rmlb-emall-sbt-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-api/rmlb-emall-sbt-content-api.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-api/rmlb-emall-sbt-content-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-service/rmlb-emall-sbt-content-service.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-content/rmlb-emall-sbt-content-service/rmlb-emall-sbt-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-dao/rmlb-emall-sbt-dao.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-dao/rmlb-emall-sbt-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-manager.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager-web/rmlb-emall-sbt-manager-web.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager-web/rmlb-emall-sbt-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-parent.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-pojo/rmlb-emall-sbt-pojo.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-pojo/rmlb-emall-sbt-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-portal-web/rmlb-emall-sbt-portal-web.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-portal-web/rmlb-emall-sbt-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-api/rmlb-emall-sbt-search-api.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-api/rmlb-emall-sbt-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-service/rmlb-emall-sbt-search-service.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-search/rmlb-emall-sbt-search-service/rmlb-emall-sbt-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-service/rmlb-emall-sbt-service.iml" filepath="$PROJECT_DIR$/rmlb-emall-sbt-manager/rmlb-emall-sbt-service/rmlb-emall-sbt-service.iml" />
+    </modules>
+  </component>
+</project>

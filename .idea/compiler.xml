@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rmlb-emall-sbt-api" />
+        <module name="rmlb-emall-sbt-common" />
+        <module name="rmlb-emall-sbt-content-api" />
+        <module name="rmlb-emall-sbt-content-service" />
+        <module name="rmlb-emall-sbt-dao" />
+        <module name="rmlb-emall-sbt-manager-web" />
+        <module name="rmlb-emall-sbt-pojo" />
+        <module name="rmlb-emall-sbt-portal-web" />
+        <module name="rmlb-emall-sbt-search-api" />
+        <module name="rmlb-emall-sbt-search-service" />
+        <module name="rmlb-emall-sbt-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rmlb-emall-sbt-api" target="1.8" />
+      <module name="rmlb-emall-sbt-common" target="1.8" />
+      <module name="rmlb-emall-sbt-content" target="1.8" />
+      <module name="rmlb-emall-sbt-content-api" target="1.8" />
+      <module name="rmlb-emall-sbt-content-service" target="1.8" />
+      <module name="rmlb-emall-sbt-dao" target="1.8" />
+      <module name="rmlb-emall-sbt-manager" target="1.8" />
+      <module name="rmlb-emall-sbt-manager-web" target="1.8" />
+      <module name="rmlb-emall-sbt-parent" target="1.8" />
+      <module name="rmlb-emall-sbt-pojo" target="1.8" />
+      <module name="rmlb-emall-sbt-portal-web" target="1.8" />
+      <module name="rmlb-emall-sbt-search" target="1.8" />
+      <module name="rmlb-emall-sbt-search-api" target="1.8" />
+      <module name="rmlb-emall-sbt-search-service" target="1.8" />
+      <module name="rmlb-emall-sbt-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyou100.rmlb.sbt.emall.dao.SearchItemMapper">
+<resultMap id="BaseResultMap" type="com.zhiyou100.rmlb.sbt.emall.common.pojo.SearchItem" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="sell_point" property="sellPoint" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="BIGINT" />
+    <result column="category_name" property="categoryName" jdbcType="VARCHAR" />
+    <result column="image" property="image" jdbcType="VARCHAR" />
+
+  </resultMap>
+	<select id="getItemByList"
+		resultType="com.zhiyou100.rmlb.sbt.emall.common.pojo.SearchItem">
+		select a.id,a.title,a.sell_point,a.price,a.image,b.name category_name from
+		tb_item a LEFT JOIN tb_item_cat b on a.cid=b.id where a.status=1
+	</select>
+	<select id="getItemById" parameterType="long" resultType="com.zhiyou100.rmlb.sbt.emall.common.pojo.SearchItem">
+	select a.id,a.title,a.sell_point,a.price,a.image,b.name category_name from
+		tb_item a LEFT JOIN tb_item_cat b on a.cid=b.id where a.status=1 and a.id=#{id};
+	</select>
+</mapper>

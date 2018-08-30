@@ -1,0 +1,150 @@
+server:
+  servlet:
+    # 配置访问路径
+    context-path: /rmlb
+  # 配置端口号
+  port: 8034
+ 
+logging:
+  level:
+    # hibernate日志，开发和测试时使用
+    # org.hibernate: debug
+    org.apache.ibatis: debug
+    com.zhiyou100.rmlb.sbt.emall.dao: debug
+    
+spring:
+  # http请求字符集
+  #http:
+  #  encoding:
+  #    charset: UTF-8
+  #    enabled: true
+  #    force: true
+
+  #jpa:
+    #database: mysql
+    # 显示sql日志 
+    #show-sql: true 
+    #配置自动建表：updata:没有表新建，有表更新操作
+    #hibernate:
+    #  ddl-auto: update
+      
+  # 数据源配置    
+  datasource:
+    name: dev
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eshop?useSSL=true
+    username: root
+    password: w5211314w
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # db-type: com.alibaba.druid.pool.DruidDataSource
+      # driver: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+     
+  # DATA WEB 相关配置 {@link SpringDataWebProperties}
+#  data:
+#    web:
+#      # 分页参数设置
+#      pageable:
+#        default-page-size: 3
+#        page-parameter: pageNumber
+#        size-parameter: pageSize
+#      # 分页排序
+#      sort:
+#        sort-parameter: id,desc
+  
+  cache:
+    type: redis      
+  # redis配置      
+  redis:
+    password: 123456
+    clusterNodes: 192.168.4.51:7111,192.168.4.52:7112,192.168.4.53:7113,192.168.4.54:7114,192.168.4.55:7115,192.168.4.56:7116
+    expireSeconds: 120
+    timeout: 10000  #redis操作的超时时间
+     #2.0之前使用
+    jedis:
+      pool:
+         #连接池最大连接数
+        max-active: 8
+         #连接池最大空闲数
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms
+    #password: "123456" 
+    cluster:
+      nodes:
+        - 192.168.4.51:7111
+        - 192.168.4.52:7112
+        - 192.168.4.53:7113
+        - 192.168.4.54:7114
+        - 192.168.4.55:7115
+        - 192.168.4.56:7116
+         
+    # lettuce客户端  2.0之后使用
+    lettuce:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-wait: -1ms
+        max-idle: 8
+      shutdown-timeout: 100ms
+        
+  # dubbo 配置
+  dubbo:
+    application:
+      name: order
+    registry:
+      address: 192.168.4.52:2181,192.168.4.53:2181,192.168.4.54:2181,192.168.4.55:2181,192.168.4.56:2181
+      protocol: zookeeper
+    protocol:
+      name: dubbo
+      port: 20885
+    base-package: com.zhiyou100.rmlb.sbt.emall.order.dubbo
+    provider:
+      timeout: 10000
+ #activemq配置 
+  #activemq:
+    #broker-url: tcp://192.168.4.52:61616
+    #user: admin
+    #password: admin
+    #pool:
+      #enabled: false
+  #jms:
+    #pub-sub-domain: true
+      
+mybatis:
+  # mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis/SqlMapConfig.xml
+  type-aliases-package: com.zhiyou100.rmlb.sbt.emall.pojo
+  
+#pagehelper:
+#  helper-dialect: mysql
+#  offset-as-page-num: true
+#  row-bounds-with-count: true
+#  reasonable: true
+  # support-methods-arguments: true
+  # params: count=countSql 
+
+## Dubbo 服务提供者配置
+#spring.dubbo.application.name=provider
+#spring.dubbo.application.name=dubbo-server
+#spring.dubbo.registry.address=zookeeper://192.168.4.51:2181
+#spring.dubbo.registry.address=zookeeper://192.168.25.101:2181
+#spring.dubbo.registry.address=zookeeper://192.168.25.140:2181
+#spring.dubbo.registry.address=zookeeper://127.0.0.1:2181
+#spring.dubbo.protocol.name=dubbo
+#spring.dubbo.protocol.port=20881
+#spring.dubbo.scan=org.spring.springboot.dubbo   

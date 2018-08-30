@@ -1,0 +1,72 @@
+## 避免和 server 工程端口冲突
+server:
+  servlet:
+    # 配置访问路径
+    context-path: /
+
+        
+  # 配置端口号
+  port: 8031
+
+
+spring:
+  # http请求字符集
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  # freemake配置
+  #freemarker:
+    #allow-request-override: false
+    #allow-session-override: false
+    #cache: true
+    #check-template-location: true
+    #content-type: text/html; charset=utf-8
+    #expose-request-attributes: false
+    #expose-session-attributes: false
+    #expose-spring-macro-helpers: false
+    #suffix: .ftl
+    #template-loader-path: classpath:/templates/
+    
+          
+  # 配置springmvc      
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 5242880
+  
+  devtools:
+    livereload:
+      enabled: true        
+    # DATA WEB 相关配置 {@link SpringDataWebProperties}
+#  data:
+#    web:
+#      # 分页参数设置
+#      pageable:
+#        default-page-size: 3
+#        page-parameter: pageNumber
+#        size-parameter: pageSize
+#      # 分页排序
+#      sort:
+#        sort-parameter: id,desc
+
+  # dubbo 配置
+  dubbo:
+    application:
+      name: sso-web
+    registry:
+      address: 192.168.4.52:2181,192.168.4.53:2181,192.168.4.54:2181,192.168.4.55:2181,192.168.4.56:2181
+      protocol: zookeeper
+    base-package: com.zhiyou100.rmlb.sbt.emall.sso.dubbo
+    consumer:
+      timeout: 10000
+
+#fastDFS默认地址
+#IMG_URL: http://192.168.4.70/fastdfs/    
+    
+    
+  

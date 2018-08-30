@@ -1,0 +1,121 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ <groupId>com.zhiyou100</groupId>
+	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>rmlb-emall-sbt-cat-web</artifactId>
+
+<!-- springboot工程 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+		<!-- <type>pom</type> -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zhiyou100</groupId>
+			<artifactId>rmlb-emall-sbt-sso-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zhiyou100</groupId>
+			<artifactId>rmlb-emall-sbt-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zhiyou100</groupId>
+			<artifactId>rmlb-emall-sbt-cat-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<!-- String工具 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.8</version>
+		</dependency>
+
+		<!-- 测试依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Web 依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Dubbo 依赖 -->
+		<dependency>
+			<groupId>com.gitee.reger</groupId>
+			<artifactId>spring-boot-starter-dubbo</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<!-- springboot 外部Tomcat支持 -->
+		<!-- servlet 依赖. -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!--jsp页面使用jstl标签 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<!--Provided start -->
+		<!--War包部署到外部的Tomcat中已经包含了这些， 所以需要添加以下依赖 否则会和内嵌的Tomcat 容器发生冲突 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!--用于编译jsp -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- 分页插件 -->
+		<!-- <dependency> <groupId>com.github.pagehelper</groupId> <artifactId>pagehelper-spring-boot-starter</artifactId> 
+			<version>1.2.5</version> </dependency> -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>5.1.4</version>
+		</dependency>
+
+		<!-- freemake -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+			<version>2.0.4.RELEASE</version>
+		</dependency>
+		<!-- 热部署依赖 start -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
+			<optional>true</optional>该属性网上很多文章说必须为true，经验证可以不用 <scope>true</scope> </dependency> -->
+		<!-- 热部署依赖 end -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Spring Boot Maven 插件 -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

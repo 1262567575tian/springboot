@@ -1,0 +1,4 @@
+com\zhiyou100\rmlb\sbt\emall\dubbo\impl\ItemDubboServiceImpl.class
+com\zhiyou100\rmlb\sbt\redis\config\RedisConfig.class
+com\zhiyou100\rmlb\sbt\emall\dubbo\impl\ItemCatDubboServiceImpl.class
+com\zhiyou100\rmlb\ManagerServerApplication.class

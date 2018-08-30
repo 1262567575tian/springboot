@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zhiyou100</groupId>
+	<artifactId>rmlb-emall-sbt-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>商城</name>
+	<description>SpringBoot全新架构</description>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<rmlb-emall-sbt.version>1.0.0-SNAPSHOT</rmlb-emall-sbt.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.zhiyou100</groupId>
+				<artifactId>rmlb-emall-sbt-pojo</artifactId>
+				<version>${rmlb-emall-sbt.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.zhiyou100</groupId>
+				<artifactId>rmlb-emall-sbt-common</artifactId>
+				<version>${rmlb-emall-sbt.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<modules>
+		<module>rmlb-emall-sbt-manager</module>
+		<module>rmlb-emall-sbt-common</module>
+		<module>rmlb-emall-sbt-manager-web</module>
+		<module>rmlb-emall-sbt-content</module>
+		<module>rmlb-emall-sbt-portal-web</module>
+		<module>rmlb-emall-sbt-search</module>
+		<module>rmlb-emall-sbt-search-web</module>
+		<module>rmlb-emall-sbt-item-web</module>
+		<module>rmlb-emall-sbt-sso</module>
+		<module>rmlb-emall-sbt-sso-web</module>
+		<module>rmlb-emall-sbt-cat</module>
+		<module>rmlb-emall-sbt-cat-web</module>
+		<module>rmlb-emall-sbt-order</module>
+
+		<module>rmlb-emall-sbt-order-web</module>
+		<module>rmlb-emall-sbt-alipay</module>
+	</modules>
+</project>
